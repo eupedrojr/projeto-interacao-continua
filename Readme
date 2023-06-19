@@ -1,0 +1,14 @@
+Explicação do arquivo .yml:
+
+O nome da ação é definido como "Node.js CI".
+O evento "push" é acionado quando há push para a branch "main".
+O evento "pull_request" é acionado quando há uma pull request aberta na branch "main".
+O trabalho (job) "build" será executado em uma máquina virtual Ubuntu.
+Os passos do trabalho incluem:
+Fazer o checkout do código do repositório.
+Configurar o ambiente Node.js na versão 14.
+Instalar as dependências do projeto com o comando "npm install".
+Executar os testes com o comando "npm test".
+Com esse arquivo .yml, sempre que houver um push ou uma pull request na branch "main" do repositório, 
+O GitHub Actions executará automaticamente a sequência de comandos definida para construir, testar e verificar a integridade do projeto Node.js. 
+Isso garante que qualquer mudança introduzida no código seja testada e validada continuamente.
